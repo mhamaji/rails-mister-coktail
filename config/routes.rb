@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   end
   # get 'cocktails/:id/doses/new', to: 'doses#new'
   # post 'cocktails/:id/doses', to: 'doses#create'
-  delete 'doses/:id', to: 'doses#destroy'
+  delete 'doses/:id', to: 'doses#destroy', as: 'dose'
 end
