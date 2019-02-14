@@ -1,1 +1,43 @@
 // Specific CSS for your home-page
+
+#cocktail-homepage {
+  text-align: center;
+  h1 {
+    color: $brand-primary;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  .banner {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: asset-url('banner.jpg');
+    width: 100vw;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .banner-text {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .card-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .cocktail-card {
+    margin: 8px 16px;
+    width: 336px;
+    height: 256px;
+    background-color: $brand-info;
+    box-shadow: 2px 2px 2px 1px $brand-success;
+  }
+  .new-button {
+    margin-bottom: 32px;
+  }
+}
