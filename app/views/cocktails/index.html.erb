@@ -10,9 +10,16 @@
       <% @cocktails.each do |cocktail| %>
           <%= link_to cocktail do %>
               <div class="cocktail-card">
-                <p>
-                  <%= cocktail.name %>
-                </p>
+                <% if cocktail.photo.file.nil? %>
+                  <%= image_tag ("blank-cocktail.png"), class: "cocktail-img" %>
+                <% else %>
+                  <%= cl_image_tag cocktail.photo, class: "cocktail-img" %>
+                <% end %>
+                <div class="cocktail-card-text">
+                  <p>
+                    <%= cocktail.name %>
+                  </p>
+                </div>
               </div>
           <% end %>
       <% end %>
