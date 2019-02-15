@@ -1,7 +1,7 @@
 <div class="container text-center">
   <h1><%= @cocktail.name %></h1>
   <% if @cocktail.photo.file.nil? %>
-    <%= image_tag ("blank-cocktail.png"), height: 300, crop: :fill %>
+    <%= image_tag ("blank-cocktail.jpg"), height: 300, crop: :fill %>
   <% else %>
     <%= cl_image_tag @cocktail.photo, height: 300, crop: :fill %>
   <% end %>
