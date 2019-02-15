@@ -4,9 +4,8 @@
       best drinks around
     </h1>
   </div>
-  <div class="container">
-      <h2 >cocktails list</h2>
-    <div class="card-box">
+      <h2>cocktails list</h2>
+    <div class="container card-box">
       <% @cocktails.each do |cocktail| %>
           <%= link_to cocktail do %>
               <div class="cocktail-card">
@@ -16,14 +15,13 @@
                   <%= cl_image_tag cocktail.photo, class: "cocktail-img" %>
                 <% end %>
                 <div class="cocktail-card-text">
-                  <p>
+                  <h4>
                     <%= cocktail.name %>
-                  </p>
+                  </h4>
                 </div>
               </div>
           <% end %>
       <% end %>
-    </div>
   </div>
   <%= link_to new_cocktail_path do %>
     <p class="btn btn-success new-button">New Recipe</p>

@@ -11,6 +11,10 @@
     color: $brand-primary;
   }
   h2 {
+    margin-top: 0;
+    padding: 16px;
+    background-color: $brand-success;
+    color: $red;
     text-align: center;
   }
 
@@ -19,18 +23,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: asset-url('banner.jpg');
+    background-image: asset-url('banner.jpg'), linear-gradient(324deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 52%, rgba(255,255,255,1) 100%);
     width: 100vw;
     height: 40vh;
     background-size: cover;
     background-position: center;
   }
   .banner-text {
+    font-weight: bold;
+    font-size: 75px;
+    color: $red;
     display: flex;
-    justify-content: space-around;
     text-align: center;
   }
   .card-box {
+    justify-content: center;
+    align-items: space-evenly;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 32px;
@@ -40,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 8px 16px;
+    margin: 8px 8px;
     width: 336px;
     height: 256px;
     background-color: $brand-info;
@@ -53,6 +61,7 @@
     height: 200px;
   }
   .cocktail-card-text {
+    align-items: center;
     height: 56px;
     color: $brand-danger;
     background-color: $brand-primary;
