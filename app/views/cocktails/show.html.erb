@@ -12,10 +12,12 @@
           <%= link_to "X", dose, method: :delete, data: {confirm: "Are you sure?"} %>
         </p>
     <% end %>
-
+<div id="margin-bottom-btn">
   <%= link_to "Add dose", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
 
   <%= link_to "Back to list", cocktails_path, class: "btn btn-success" %>
 
   <%= link_to "Delete", @cocktail, method: "delete", class: "btn btn-success" %>
+
+</div>
 </div>
